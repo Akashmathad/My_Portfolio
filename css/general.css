@@ -1,0 +1,113 @@
+/*
+---01 TYPOGRAPHY SYSTEM
+
+-FONT sizes(px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-Font weights
+Defualt: 400;
+500
+600
+700
+
+-Line heights
+Defualt: 1;
+1.05
+1.2
+Paragraph defualt:1.6
+
+-Letter spacing
+-0.5px
+0.75px
+
+-Spacing System(px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+--- 02 COLORS
+
+Primary: #e67e22;
+
+Tints:
+#fdf2e9
+#fae5d3
+Shades:
+Accents:
+Grays:#555 ,#333,  
+
+---05 SHADOWS
+
+--- 06 BORDER-RADIUS
+Defualt:9px
+11px
+
+--- 07 WHITESPACES
+
+-Spacing System(px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #333;
+}
+
+/**********************/
+/*GENERAL REUSABLE COMPONENTS*/
+/**********************/
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 4.8rem;
+  row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.btn:link,
+.btn:visited {
+  padding: 1.6rem 3.2rem;
+  background-color: #12b886;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.8rem;
+  text-decoration: none;
+  border-radius: 999px;
+
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
